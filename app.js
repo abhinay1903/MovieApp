@@ -1,11 +1,6 @@
 //this api allows us to access all the data
 let api = 'http://www.omdbapi.com/?apikey=61e576a4&t=';
 //fetch is just like a promise.It executes only if the api is fetched.If the api is fetched successfully,then the response(json file which contains all the data such as actors,director,etc )is generated.
-fetch(api).then((response)=>{
-    return response.json()
-}).then((movieData)=>{
-    console.log(movieData)
-})
 //now we need to take the elements from the html page where we want to inject the values.
 let actors = document.getElementById('actors');
 let director = document.getElementById('director');
